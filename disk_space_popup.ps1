@@ -12,4 +12,4 @@ $space = [math]::Round(($drive.Free / 1GB), 2)
 $spaceUsed = [math]::Round(($used.Used / 1GB), 2)
 
 $shell = New-Object -ComObject WScript.Shell
-$shell.Popup("$space GB / $spaceUsed GB on your C:/")
+$shell.Popup("$spaceUsed GB / $space GB on your C:/")
